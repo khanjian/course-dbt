@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+
+  - name: postgres # name of the source 
+    schema: public # this is the schema our raw data lives in
+    database: raw # this is the name of the database that our source data lives in
+
+
+    tables: # this is where we define table metadata (name, description, load timestamps)
+      - name: addresses
+      - name: users     
+      - name: promos
+      - name: products
+      - name: orders
+      - name: order_items    
+      - name: events              

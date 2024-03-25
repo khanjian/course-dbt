@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_postgres__addresses
+    description: Each row is a unqiue address on the greenery platform.
+    columns:
+      - name: address_id
+        description: UUID for each unique address on platform
+      - name: address
+        description: The first few lines of the address   
+  - name: stg_postgres__events
+    description: Each row is a unqiue event on the greenery platform.
+    columns:
+      - name: event_id
+        description: UUID of each unique event on the platform
+      - name: session_id
+        description: UUID of each browsing session on the platform which can contain many events
+  - name: stg_postgres__order_items
+    description: Each row is a unqiue item within an order on the greenery platform.       
+  - name: stg_postgres__orders
+    description: Each row is a unique order on the greenery platform.       
+  - name: stg_postgres__products
+    description: Each row is a unqiue product that is sold on the greenery platform.       
+  - name: stg_postgres__promos
+    description: Each row is a unqiue promo code on the greenery platform.       
+  - name: stg_postgres__users
+    description: Each row is a unqiue user on the greenery platform.                                   
