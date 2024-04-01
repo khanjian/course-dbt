@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: All orders joined with some location data and number of products per order
+    columns:
+    - name: products_in_order
+      tests:
+        - positive_values    
